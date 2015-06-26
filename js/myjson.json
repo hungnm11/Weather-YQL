@@ -1,0 +1,177 @@
+{
+ "query": {
+  "count": 1,
+  "created": "2015-06-26T02:39:52Z",
+  "lang": "en-US",
+  "diagnostics": {
+   "redirect": [
+    {
+     "from": "http://github.com/yql/yql-tables/raw/master/weather/weather.bylocation.xml",
+     "status": "301",
+     "content": "https://github.com/yql/yql-tables/raw/master/weather/weather.bylocation.xml"
+    },
+    {
+     "from": "/yql/yql-tables/raw/master/weather/weather.bylocation.xml",
+     "status": "302",
+     "content": "https://raw.githubusercontent.com/yql/yql-tables/master/weather/weather.bylocation.xml"
+    }
+   ],
+   "url": [
+    {
+     "execution-start-time": "1",
+     "execution-stop-time": "964",
+     "execution-time": "963",
+     "content": "http://github.com/yql/yql-tables/raw/master/weather/weather.bylocation.xml"
+    },
+    {
+     "execution-start-time": "971",
+     "execution-stop-time": "988",
+     "execution-time": "17",
+     "content": "http://wws.geotech.yahooapis.com/v1/places.q(berlin%252cgermany);start=0;count=1"
+    },
+    {
+     "execution-start-time": "989",
+     "execution-stop-time": "1005",
+     "execution-time": "16",
+     "content": "http://weather.yahooapis.com/forecastrss?w=638242&u=c"
+    }
+   ],
+   "publiclyCallable": "true",
+   "cache": {
+    "execution-start-time": "970",
+    "execution-stop-time": "970",
+    "execution-time": "0",
+    "method": "GET",
+    "type": "MEMCACHED",
+    "content": "ec41ac5da550862fbc13bc4969975253"
+   },
+   "query": {
+    "execution-start-time": "970",
+    "execution-stop-time": "989",
+    "execution-time": "19",
+    "content": "select woeid from geo.places(1) where text=\"berlin%2cgermany\""
+   },
+   "javascript": {
+    "execution-start-time": "967",
+    "execution-stop-time": "1006",
+    "execution-time": "39",
+    "instructions-used": "20610",
+    "table-name": "we"
+   },
+   "user-time": "1007",
+   "service-time": "996",
+   "build-version": "0.2.154"
+  },
+  "results": {
+   "weather": {
+    "xmlns": "http://where.yahooapis.com/v1/schema.rng",
+    "rss": {
+     "version": "2.0",
+     "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
+     "yweather": "http://xml.weather.yahoo.com/ns/rss/1.0",
+     "channel": {
+      "title": "Yahoo! Weather - Berlin, DE",
+      "link": "http://us.rd.yahoo.com/dailynews/rss/weather/Berlin__DE/*http://weather.yahoo.com/forecast/GMXX0007_c.html",
+      "description": "Yahoo! Weather for Berlin, DE",
+      "language": "en-us",
+      "lastBuildDate": "Fri, 26 Jun 2015 4:19 am CEST",
+      "ttl": "60",
+      "location": {
+       "city": "Berlin",
+       "country": "Germany",
+       "region": "BE"
+      },
+      "units": {
+       "distance": "km",
+       "pressure": "mb",
+       "speed": "km/h",
+       "temperature": "C"
+      },
+      "wind": {
+       "chill": "15",
+       "direction": "0",
+       "speed": "0"
+      },
+      "atmosphere": {
+       "humidity": "82",
+       "pressure": "1015.92",
+       "rising": "2",
+       "visibility": "9.99"
+      },
+      "astronomy": {
+       "sunrise": "4:42 am",
+       "sunset": "9:33 pm"
+      },
+      "image": {
+       "title": "Yahoo! Weather",
+       "width": "142",
+       "height": "18",
+       "link": "http://weather.yahoo.com",
+       "url": "http://l.yimg.com/a/i/brand/purplelogo//uh/us/news-wea.gif"
+      },
+      "item": {
+       "title": "Conditions for Berlin, DE at 4:19 am CEST",
+       "lat": "52.52",
+       "long": "13.38",
+       "link": "http://us.rd.yahoo.com/dailynews/rss/weather/Berlin__DE/*http://weather.yahoo.com/forecast/GMXX0007_c.html",
+       "pubDate": "Fri, 26 Jun 2015 4:19 am CEST",
+       "condition": {
+        "code": "33",
+        "date": "Fri, 26 Jun 2015 4:19 am CEST",
+        "temp": "15",
+        "text": "Fair"
+       },
+       "description": "<img src=\"http://l.yimg.com/a/i/us/we/52/33.gif\"/><br />\n<b>Current Conditions:</b><br />\nFair, 15 C<BR />\n<BR /><b>Forecast:</b><BR />\nFri - PM Light Rain. High: 23 Low: 14<br />\nSat - PM Thunderstorms. High: 23 Low: 14<br />\nSun - AM Showers. High: 22 Low: 14<br />\nMon - Partly Cloudy. High: 24 Low: 16<br />\nTue - Partly Cloudy. High: 25 Low: 13<br />\n<br />\n<a href=\"http://us.rd.yahoo.com/dailynews/rss/weather/Berlin__DE/*http://weather.yahoo.com/forecast/GMXX0007_c.html\">Full Forecast at Yahoo! Weather</a><BR/><BR/>\n(provided by <a href=\"http://www.weather.com\" >The Weather Channel</a>)<br/>",
+       "forecast": [
+        {
+         "code": "11",
+         "date": "26 Jun 2015",
+         "day": "Fri",
+         "high": "23",
+         "low": "14",
+         "text": "PM Light Rain"
+        },
+        {
+         "code": "38",
+         "date": "27 Jun 2015",
+         "day": "Sat",
+         "high": "23",
+         "low": "14",
+         "text": "PM Thunderstorms"
+        },
+        {
+         "code": "39",
+         "date": "28 Jun 2015",
+         "day": "Sun",
+         "high": "22",
+         "low": "14",
+         "text": "AM Showers"
+        },
+        {
+         "code": "30",
+         "date": "29 Jun 2015",
+         "day": "Mon",
+         "high": "24",
+         "low": "16",
+         "text": "Partly Cloudy"
+        },
+        {
+         "code": "30",
+         "date": "30 Jun 2015",
+         "day": "Tue",
+         "high": "25",
+         "low": "13",
+         "text": "Partly Cloudy"
+        }
+       ],
+       "guid": {
+        "isPermaLink": "false",
+        "content": "GMXX0007_2015_06_30_7_00_CEST"
+       }
+      }
+     }
+    }
+   }
+  }
+ }
+}
