@@ -1,52 +1,12 @@
-
-<!DOCTYPE html>
+<!doctype html>
 <html>
 <head>
-<title>Test</title>
-<link rel="stylesheet" type="text/css" href="css/style.css">
-</head>
+    <title>Json</title>
+    	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="js/script.js"></script>
 
+</head>
 <body>
-<div id="slider">
-	<div id="carousel">
-          <ul>
-            <li>Slide 1</li>
-            <li>Slide 2</li>
-            <li>Slide 3</li>
-            <li>Slide 4</li>
-          </ul>
-    </div>
-    <a href="#" class="btn-left" title="Left">Prev</a>
-    <a href="#" class="btn-right" title="Right">Next</a>   
-</div>
- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-  <script type="text/javascript">
-  	$(document).ready(function(){
-			var t = setInterval(function(){
-				$("#carousel ul").animate({marginLeft:-480},1000,function(){
-					$(this).find("li:last").after($(this).find("li:first"));
-					$(this).css({marginLeft:0});
-				})
-            },5000);
-            
-            $('.btn-right').click(function() {
-                //alert(1);
-               $("#carousel ul").animate({marginLeft:-480},1000,function(){
-					$(this).find("li:last").after($(this).find("li:first"));
-					$(this).css({marginLeft:0});
-				})
-            });
-            
-            $('.btn-left').click(function() {
-                
-                $("#carousel ul").animate({marginLeft:480},1000,function(){
-                    //alert(1);
-				    $(this).find("li:last").after($(this).find("li:first"));
-                    $(this).css({marginRight:0});
-                })
-                
-            });
-	});
-  </script>
+    <div id="result"></div>
 </body>
 </html>
