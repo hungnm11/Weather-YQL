@@ -6,6 +6,7 @@
 body{
 	background-color: #333;
 	color: #fff;
+    font-family: sans-serif;
 }
 
 #container {
@@ -23,10 +24,13 @@ body{
 	border: #666 solid 1px;
 }
 
-
-
 .slide{
 	position: absolute;
+    width: 504px;
+    box-sizing: inherit;
+    padding: 20px;
+    font-family: sans-serif;
+    text-align: center;
 }
 
 #slider-caption {
@@ -43,10 +47,11 @@ body{
 #prev, #next {
 	float: left;
 	position: relative;
-	margin-top: 100px;
+	margin-top: 90px;
 	z-index: 100;
 	padding: 5px;
 	cursor: pointer;
+    font-family: sans-serif;
 }
 
 #prev {
@@ -58,19 +63,34 @@ body{
 }
 
 #countSlide {
-	width: 200px;
+	width: 100%;
+    text-align: center;
 }
 
 .numberSlide {
-	float: left;
-	width: 20px;
+	width: 15px;
 	text-align: center;
 	cursor: pointer;
 	margin-right: 5px;
 	background: #fff;
 	color: #000;
+    font-family: sans-serif;
+    font-size: 12px;
+    text-decoration: none;
+    padding: 3px 5px;
 }
 
 #countSlide .active{
-	color: red;
+	color: #fff;
+    background-color: dimgrey;
+}
+
+.slide h2 {
+    color: coral;
+    margin: 0;
+    padding: 0;
+}
+
+.slide p {
+    font-size: 14px;
 }

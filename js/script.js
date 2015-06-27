@@ -15,14 +15,14 @@ $(function() {
         for (var i = 0; i < countObj; i++)
         {
             output += "<div class='slide'>";
-            output += "Location: " + data.query.results.channel[i].location.city + ", "+ data.query.results.channel[i].location.country + "<br/>";
-            output += data.query.results.channel[i].item.condition.date +"<br/>";
+            output += "<h2>" + data.query.results.channel[i].location.city + ", "+ data.query.results.channel[i].location.country + "</h2>";
+            output += "<h5>" + data.query.results.channel[i].item.condition.date +"</h5>";
             output += '<img src="http://l.yimg.com/a/i/us/we/52/' + data.query.results.channel[i].item.condition.code + '.gif" width="34" height="34" title="' + data.query.results.channel[i].item.condition.code + '" /><br/>';
-            output += data.query.results.channel[i].item.condition.temp+' &deg;F<br/>';
-            output += data.query.results.channel[i].item.condition.text;
+            output += "<p>" + data.query.results.channel[i].item.condition.temp+ " &deg;F</p>";
+            output += "<p>" + data.query.results.channel[i].item.condition.text + "</p>";
 
             var winddirection=parseInt(data.query.results.channel[i].wind.direction);
-            var direction='';
+            var direction = "";
             switch(true)
             {
                 case (winddirection==0):
@@ -54,20 +54,17 @@ $(function() {
                     break;
             }
 
-            output += 'Wind: '+direction+' at '+data.query.results.channel[i].wind.speed+' mph<br/>';
-            output += 'Humidity: '+data.query.results.channel[i].atmosphere.humidity+'%<br/>'
-            output += 'Check ' + "<a href='"+data.query.results.channel[i].item.link+"'>Full Forecast</a><br/><br/>";
+            output += '<p>Wind: '+direction+' at '+data.query.results.channel[i].wind.speed+' mph</p>';
+            output += '<p>Humidity: '+data.query.results.channel[i].atmosphere.humidity+'%</p>'
             output += "</div>";
             
-            outputNumber += "<div class='numberSlide'>" + (i+1) + "</div>";
+            outputNumber += "<a href='#' class='numberSlide'>" + (i+1) + "</a>";
             
             document.getElementById("slider").innerHTML = output;
             
             document.getElementById("countSlide").innerHTML = outputNumber;
         }
         
-        
-
         //Add active to the first slide
         $('.slide').first().addClass('active');
         $('.numberSlide').first().addClass('active');
@@ -103,7 +100,11 @@ $(function() {
             $('.slide').fadeOut(speed);
             $('.active').fadeIn(speed);
         }
-
+        
+        var widthSlide = $('.slide').outerWidth()
+        var totalSlide = countObj * widthSlide;
+        
+        
         function nextSlide() {
             $('.active').removeClass('active').addClass('oldActive');
             if($('.oldActive').is(':last-child')) {
@@ -114,6 +115,7 @@ $(function() {
             }
 
             $('.oldActive').removeClass('oldActive');
+            
             $('.slide').fadeOut(speed);
             $('.active').fadeIn(speed);
         }
