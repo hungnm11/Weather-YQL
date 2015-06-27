@@ -1,177 +1,591 @@
 {
  "query": {
-  "count": 1,
-  "created": "2015-06-26T02:39:52Z",
+  "count": 5,
+  "created": "2015-06-27T02:31:23Z",
   "lang": "en-US",
   "diagnostics": {
-   "redirect": [
-    {
-     "from": "http://github.com/yql/yql-tables/raw/master/weather/weather.bylocation.xml",
-     "status": "301",
-     "content": "https://github.com/yql/yql-tables/raw/master/weather/weather.bylocation.xml"
-    },
-    {
-     "from": "/yql/yql-tables/raw/master/weather/weather.bylocation.xml",
-     "status": "302",
-     "content": "https://raw.githubusercontent.com/yql/yql-tables/master/weather/weather.bylocation.xml"
-    }
-   ],
+   "publiclyCallable": "true",
    "url": [
     {
-     "execution-start-time": "1",
-     "execution-stop-time": "964",
-     "execution-time": "963",
-     "content": "http://github.com/yql/yql-tables/raw/master/weather/weather.bylocation.xml"
+     "execution-start-time": "6",
+     "execution-stop-time": "36",
+     "execution-time": "30",
+     "content": "http://weather.yahooapis.com/forecastrss?p=94085"
     },
     {
-     "execution-start-time": "971",
-     "execution-stop-time": "988",
-     "execution-time": "17",
-     "content": "http://wws.geotech.yahooapis.com/v1/places.q(berlin%252cgermany);start=0;count=1"
+     "execution-start-time": "7",
+     "execution-stop-time": "38",
+     "execution-time": "31",
+     "content": "http://weather.yahooapis.com/forecastrss?p=95602"
     },
     {
-     "execution-start-time": "989",
-     "execution-stop-time": "1005",
-     "execution-time": "16",
-     "content": "http://weather.yahooapis.com/forecastrss?w=638242&u=c"
+     "execution-start-time": "6",
+     "execution-stop-time": "57",
+     "execution-time": "51",
+     "content": "http://weather.yahooapis.com/forecastrss?p=90210"
+    },
+    {
+     "execution-start-time": "6",
+     "execution-stop-time": "235",
+     "execution-time": "229",
+     "content": "http://weather.yahooapis.com/forecastrss?p=90222"
+    },
+    {
+     "execution-start-time": "6",
+     "execution-stop-time": "349",
+     "execution-time": "343",
+     "content": "http://weather.yahooapis.com/forecastrss?p=94536"
     }
    ],
-   "publiclyCallable": "true",
-   "cache": {
-    "execution-start-time": "970",
-    "execution-stop-time": "970",
-    "execution-time": "0",
-    "method": "GET",
-    "type": "MEMCACHED",
-    "content": "ec41ac5da550862fbc13bc4969975253"
-   },
-   "query": {
-    "execution-start-time": "970",
-    "execution-stop-time": "989",
-    "execution-time": "19",
-    "content": "select woeid from geo.places(1) where text=\"berlin%2cgermany\""
-   },
-   "javascript": {
-    "execution-start-time": "967",
-    "execution-stop-time": "1006",
-    "execution-time": "39",
-    "instructions-used": "20610",
-    "table-name": "we"
-   },
-   "user-time": "1007",
-   "service-time": "996",
-   "build-version": "0.2.154"
+   "javascript": [
+    {
+     "execution-start-time": "3",
+     "execution-stop-time": "38",
+     "execution-time": "35",
+     "instructions-used": "0",
+     "table-name": "weather.forecast"
+    },
+    {
+     "execution-start-time": "3",
+     "execution-stop-time": "40",
+     "execution-time": "36",
+     "instructions-used": "0",
+     "table-name": "weather.forecast"
+    },
+    {
+     "execution-start-time": "2",
+     "execution-stop-time": "58",
+     "execution-time": "56",
+     "instructions-used": "0",
+     "table-name": "weather.forecast"
+    },
+    {
+     "execution-start-time": "3",
+     "execution-stop-time": "236",
+     "execution-time": "233",
+     "instructions-used": "0",
+     "table-name": "weather.forecast"
+    },
+    {
+     "execution-start-time": "2",
+     "execution-stop-time": "351",
+     "execution-time": "348",
+     "instructions-used": "0",
+     "table-name": "weather.forecast"
+    }
+   ],
+   "user-time": "353",
+   "service-time": "684",
+   "build-version": "0.2.509"
   },
   "results": {
-   "weather": {
-    "xmlns": "http://where.yahooapis.com/v1/schema.rng",
-    "rss": {
-     "version": "2.0",
-     "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
-     "yweather": "http://xml.weather.yahoo.com/ns/rss/1.0",
-     "channel": {
-      "title": "Yahoo! Weather - Berlin, DE",
-      "link": "http://us.rd.yahoo.com/dailynews/rss/weather/Berlin__DE/*http://weather.yahoo.com/forecast/GMXX0007_c.html",
-      "description": "Yahoo! Weather for Berlin, DE",
-      "language": "en-us",
-      "lastBuildDate": "Fri, 26 Jun 2015 4:19 am CEST",
-      "ttl": "60",
-      "location": {
-       "city": "Berlin",
-       "country": "Germany",
-       "region": "BE"
+   "channel": [
+    {
+     "title": "Yahoo! Weather - Beverly Hills, CA",
+     "link": "http://us.rd.yahoo.com/dailynews/rss/weather/Beverly_Hills__CA/*http://weather.yahoo.com/forecast/USCA0090_f.html",
+     "description": "Yahoo! Weather for Beverly Hills, CA",
+     "language": "en-us",
+     "lastBuildDate": "Fri, 26 Jun 2015 6:51 pm PDT",
+     "ttl": "60",
+     "location": {
+      "city": "Beverly Hills",
+      "country": "US",
+      "region": "CA"
+     },
+     "units": {
+      "distance": "mi",
+      "pressure": "in",
+      "speed": "mph",
+      "temperature": "F"
+     },
+     "wind": {
+      "chill": "63",
+      "direction": "240",
+      "speed": "9"
+     },
+     "atmosphere": {
+      "humidity": "90",
+      "pressure": "29.93",
+      "rising": "2",
+      "visibility": "10"
+     },
+     "astronomy": {
+      "sunrise": "5:44 am",
+      "sunset": "8:08 pm"
+     },
+     "image": {
+      "title": "Yahoo! Weather",
+      "width": "142",
+      "height": "18",
+      "link": "http://weather.yahoo.com",
+      "url": "http://l.yimg.com/a/i/brand/purplelogo//uh/us/news-wea.gif"
+     },
+     "item": {
+      "title": "Conditions for Beverly Hills, CA at 6:51 pm PDT",
+      "lat": "34.08",
+      "long": "-118.4",
+      "link": "http://us.rd.yahoo.com/dailynews/rss/weather/Beverly_Hills__CA/*http://weather.yahoo.com/forecast/USCA0090_f.html",
+      "pubDate": "Fri, 26 Jun 2015 6:51 pm PDT",
+      "condition": {
+       "code": "34",
+       "date": "Fri, 26 Jun 2015 6:51 pm PDT",
+       "temp": "63",
+       "text": "Fair"
       },
-      "units": {
-       "distance": "km",
-       "pressure": "mb",
-       "speed": "km/h",
-       "temperature": "C"
-      },
-      "wind": {
-       "chill": "15",
-       "direction": "0",
-       "speed": "0"
-      },
-      "atmosphere": {
-       "humidity": "82",
-       "pressure": "1015.92",
-       "rising": "2",
-       "visibility": "9.99"
-      },
-      "astronomy": {
-       "sunrise": "4:42 am",
-       "sunset": "9:33 pm"
-      },
-      "image": {
-       "title": "Yahoo! Weather",
-       "width": "142",
-       "height": "18",
-       "link": "http://weather.yahoo.com",
-       "url": "http://l.yimg.com/a/i/brand/purplelogo//uh/us/news-wea.gif"
-      },
-      "item": {
-       "title": "Conditions for Berlin, DE at 4:19 am CEST",
-       "lat": "52.52",
-       "long": "13.38",
-       "link": "http://us.rd.yahoo.com/dailynews/rss/weather/Berlin__DE/*http://weather.yahoo.com/forecast/GMXX0007_c.html",
-       "pubDate": "Fri, 26 Jun 2015 4:19 am CEST",
-       "condition": {
-        "code": "33",
-        "date": "Fri, 26 Jun 2015 4:19 am CEST",
-        "temp": "15",
-        "text": "Fair"
+      "description": "\n<img src=\"http://l.yimg.com/a/i/us/we/52/34.gif\"/><br />\n<b>Current Conditions:</b><br />\nFair, 63 F<BR />\n<BR /><b>Forecast:</b><BR />\nFri - Partly Cloudy. High: 78 Low: 61<br />\nSat - Mostly Cloudy. High: 79 Low: 64<br />\nSun - AM Clouds/PM Sun. High: 84 Low: 66<br />\nMon - AM Clouds/PM Sun. High: 85 Low: 67<br />\nTue - AM Clouds/PM Sun. High: 84 Low: 67<br />\n<br />\n<a href=\"http://us.rd.yahoo.com/dailynews/rss/weather/Beverly_Hills__CA/*http://weather.yahoo.com/forecast/USCA0090_f.html\">Full Forecast at Yahoo! Weather</a><BR/><BR/>\n(provided by <a href=\"http://www.weather.com\" >The Weather Channel</a>)<br/>\n",
+      "forecast": [
+       {
+        "code": "29",
+        "date": "26 Jun 2015",
+        "day": "Fri",
+        "high": "78",
+        "low": "61",
+        "text": "Partly Cloudy"
        },
-       "description": "<img src=\"http://l.yimg.com/a/i/us/we/52/33.gif\"/><br />\n<b>Current Conditions:</b><br />\nFair, 15 C<BR />\n<BR /><b>Forecast:</b><BR />\nFri - PM Light Rain. High: 23 Low: 14<br />\nSat - PM Thunderstorms. High: 23 Low: 14<br />\nSun - AM Showers. High: 22 Low: 14<br />\nMon - Partly Cloudy. High: 24 Low: 16<br />\nTue - Partly Cloudy. High: 25 Low: 13<br />\n<br />\n<a href=\"http://us.rd.yahoo.com/dailynews/rss/weather/Berlin__DE/*http://weather.yahoo.com/forecast/GMXX0007_c.html\">Full Forecast at Yahoo! Weather</a><BR/><BR/>\n(provided by <a href=\"http://www.weather.com\" >The Weather Channel</a>)<br/>",
-       "forecast": [
-        {
-         "code": "11",
-         "date": "26 Jun 2015",
-         "day": "Fri",
-         "high": "23",
-         "low": "14",
-         "text": "PM Light Rain"
-        },
-        {
-         "code": "38",
-         "date": "27 Jun 2015",
-         "day": "Sat",
-         "high": "23",
-         "low": "14",
-         "text": "PM Thunderstorms"
-        },
-        {
-         "code": "39",
-         "date": "28 Jun 2015",
-         "day": "Sun",
-         "high": "22",
-         "low": "14",
-         "text": "AM Showers"
-        },
-        {
-         "code": "30",
-         "date": "29 Jun 2015",
-         "day": "Mon",
-         "high": "24",
-         "low": "16",
-         "text": "Partly Cloudy"
-        },
-        {
-         "code": "30",
-         "date": "30 Jun 2015",
-         "day": "Tue",
-         "high": "25",
-         "low": "13",
-         "text": "Partly Cloudy"
-        }
-       ],
-       "guid": {
-        "isPermaLink": "false",
-        "content": "GMXX0007_2015_06_30_7_00_CEST"
+       {
+        "code": "28",
+        "date": "27 Jun 2015",
+        "day": "Sat",
+        "high": "79",
+        "low": "64",
+        "text": "Mostly Cloudy"
+       },
+       {
+        "code": "30",
+        "date": "28 Jun 2015",
+        "day": "Sun",
+        "high": "84",
+        "low": "66",
+        "text": "AM Clouds/PM Sun"
+       },
+       {
+        "code": "30",
+        "date": "29 Jun 2015",
+        "day": "Mon",
+        "high": "85",
+        "low": "67",
+        "text": "AM Clouds/PM Sun"
+       },
+       {
+        "code": "30",
+        "date": "30 Jun 2015",
+        "day": "Tue",
+        "high": "84",
+        "low": "67",
+        "text": "AM Clouds/PM Sun"
        }
+      ],
+      "guid": {
+       "isPermaLink": "false",
+       "content": "USCA0090_2015_06_30_7_00_PDT"
+      }
+     }
+    },
+    {
+     "title": "Yahoo! Weather - Fremont, CA",
+     "link": "http://us.rd.yahoo.com/dailynews/rss/weather/Fremont__CA/*http://weather.yahoo.com/forecast/USCA0403_f.html",
+     "description": "Yahoo! Weather for Fremont, CA",
+     "language": "en-us",
+     "lastBuildDate": "Fri, 26 Jun 2015 6:47 pm PDT",
+     "ttl": "60",
+     "location": {
+      "city": "Fremont",
+      "country": "US",
+      "region": "CA"
+     },
+     "units": {
+      "distance": "mi",
+      "pressure": "in",
+      "speed": "mph",
+      "temperature": "F"
+     },
+     "wind": {
+      "chill": "70",
+      "direction": "350",
+      "speed": "21"
+     },
+     "atmosphere": {
+      "humidity": "78",
+      "pressure": "29.9",
+      "rising": "1",
+      "visibility": ""
+     },
+     "astronomy": {
+      "sunrise": "5:48 am",
+      "sunset": "8:32 pm"
+     },
+     "image": {
+      "title": "Yahoo! Weather",
+      "width": "142",
+      "height": "18",
+      "link": "http://weather.yahoo.com",
+      "url": "http://l.yimg.com/a/i/brand/purplelogo//uh/us/news-wea.gif"
+     },
+     "item": {
+      "title": "Conditions for Fremont, CA at 6:47 pm PDT",
+      "lat": "37.53",
+      "long": "-122",
+      "link": "http://us.rd.yahoo.com/dailynews/rss/weather/Fremont__CA/*http://weather.yahoo.com/forecast/USCA0403_f.html",
+      "pubDate": "Fri, 26 Jun 2015 6:47 pm PDT",
+      "condition": {
+       "code": "30",
+       "date": "Fri, 26 Jun 2015 6:47 pm PDT",
+       "temp": "70",
+       "text": "Partly Cloudy"
+      },
+      "description": "\n<img src=\"http://l.yimg.com/a/i/us/we/52/30.gif\"/><br />\n<b>Current Conditions:</b><br />\nPartly Cloudy, 70 F<BR />\n<BR /><b>Forecast:</b><BR />\nFri - Mostly Clear. High: 86 Low: 59<br />\nSat - AM Clouds/PM Sun. High: 80 Low: 60<br />\nSun - AM Clouds/PM Sun. High: 78 Low: 57<br />\nMon - AM Clouds/PM Sun. High: 81 Low: 59<br />\nTue - AM Clouds/PM Sun. High: 90 Low: 64<br />\n<br />\n<a href=\"http://us.rd.yahoo.com/dailynews/rss/weather/Fremont__CA/*http://weather.yahoo.com/forecast/USCA0403_f.html\">Full Forecast at Yahoo! Weather</a><BR/><BR/>\n(provided by <a href=\"http://www.weather.com\" >The Weather Channel</a>)<br/>\n",
+      "forecast": [
+       {
+        "code": "33",
+        "date": "26 Jun 2015",
+        "day": "Fri",
+        "high": "86",
+        "low": "59",
+        "text": "Mostly Clear"
+       },
+       {
+        "code": "30",
+        "date": "27 Jun 2015",
+        "day": "Sat",
+        "high": "80",
+        "low": "60",
+        "text": "AM Clouds/PM Sun"
+       },
+       {
+        "code": "30",
+        "date": "28 Jun 2015",
+        "day": "Sun",
+        "high": "78",
+        "low": "57",
+        "text": "AM Clouds/PM Sun"
+       },
+       {
+        "code": "30",
+        "date": "29 Jun 2015",
+        "day": "Mon",
+        "high": "81",
+        "low": "59",
+        "text": "AM Clouds/PM Sun"
+       },
+       {
+        "code": "30",
+        "date": "30 Jun 2015",
+        "day": "Tue",
+        "high": "90",
+        "low": "64",
+        "text": "AM Clouds/PM Sun"
+       }
+      ],
+      "guid": {
+       "isPermaLink": "false",
+       "content": "USCA0403_2015_06_30_7_00_PDT"
+      }
+     }
+    },
+    {
+     "title": "Yahoo! Weather - Sunnyvale, CA",
+     "link": "http://us.rd.yahoo.com/dailynews/rss/weather/Sunnyvale__CA/*http://weather.yahoo.com/forecast/USCA1116_f.html",
+     "description": "Yahoo! Weather for Sunnyvale, CA",
+     "language": "en-us",
+     "lastBuildDate": "Fri, 26 Jun 2015 6:56 pm PDT",
+     "ttl": "60",
+     "location": {
+      "city": "Sunnyvale",
+      "country": "US",
+      "region": "CA"
+     },
+     "units": {
+      "distance": "mi",
+      "pressure": "in",
+      "speed": "mph",
+      "temperature": "F"
+     },
+     "wind": {
+      "chill": "71",
+      "direction": "330",
+      "speed": "13"
+     },
+     "atmosphere": {
+      "humidity": "66",
+      "pressure": "29.91",
+      "rising": "1",
+      "visibility": "10"
+     },
+     "astronomy": {
+      "sunrise": "5:46 am",
+      "sunset": "8:32 pm"
+     },
+     "image": {
+      "title": "Yahoo! Weather",
+      "width": "142",
+      "height": "18",
+      "link": "http://weather.yahoo.com",
+      "url": "http://l.yimg.com/a/i/brand/purplelogo//uh/us/news-wea.gif"
+     },
+     "item": {
+      "title": "Conditions for Sunnyvale, CA at 6:56 pm PDT",
+      "lat": "37.39",
+      "long": "-122.03",
+      "link": "http://us.rd.yahoo.com/dailynews/rss/weather/Sunnyvale__CA/*http://weather.yahoo.com/forecast/USCA1116_f.html",
+      "pubDate": "Fri, 26 Jun 2015 6:56 pm PDT",
+      "condition": {
+       "code": "34",
+       "date": "Fri, 26 Jun 2015 6:56 pm PDT",
+       "temp": "71",
+       "text": "Fair"
+      },
+      "description": "\n<img src=\"http://l.yimg.com/a/i/us/we/52/34.gif\"/><br />\n<b>Current Conditions:</b><br />\nFair, 71 F<BR />\n<BR /><b>Forecast:</b><BR />\nFri - Mostly Clear. High: 79 Low: 59<br />\nSat - AM Clouds/PM Sun. High: 76 Low: 59<br />\nSun - AM Clouds/PM Sun. High: 76 Low: 57<br />\nMon - AM Clouds/PM Sun. High: 79 Low: 59<br />\nTue - AM Clouds/PM Sun. High: 85 Low: 65<br />\n<br />\n<a href=\"http://us.rd.yahoo.com/dailynews/rss/weather/Sunnyvale__CA/*http://weather.yahoo.com/forecast/USCA1116_f.html\">Full Forecast at Yahoo! Weather</a><BR/><BR/>\n(provided by <a href=\"http://www.weather.com\" >The Weather Channel</a>)<br/>\n",
+      "forecast": [
+       {
+        "code": "33",
+        "date": "26 Jun 2015",
+        "day": "Fri",
+        "high": "79",
+        "low": "59",
+        "text": "Mostly Clear"
+       },
+       {
+        "code": "30",
+        "date": "27 Jun 2015",
+        "day": "Sat",
+        "high": "76",
+        "low": "59",
+        "text": "AM Clouds/PM Sun"
+       },
+       {
+        "code": "30",
+        "date": "28 Jun 2015",
+        "day": "Sun",
+        "high": "76",
+        "low": "57",
+        "text": "AM Clouds/PM Sun"
+       },
+       {
+        "code": "30",
+        "date": "29 Jun 2015",
+        "day": "Mon",
+        "high": "79",
+        "low": "59",
+        "text": "AM Clouds/PM Sun"
+       },
+       {
+        "code": "30",
+        "date": "30 Jun 2015",
+        "day": "Tue",
+        "high": "85",
+        "low": "65",
+        "text": "AM Clouds/PM Sun"
+       }
+      ],
+      "guid": {
+       "isPermaLink": "false",
+       "content": "USCA1116_2015_06_30_7_00_PDT"
+      }
+     }
+    },
+    {
+     "title": "Yahoo! Weather - Compton, CA",
+     "link": "http://us.rd.yahoo.com/dailynews/rss/weather/Compton__CA/*http://weather.yahoo.com/forecast/USCA0246_f.html",
+     "description": "Yahoo! Weather for Compton, CA",
+     "language": "en-us",
+     "lastBuildDate": "Fri, 26 Jun 2015 6:51 pm PDT",
+     "ttl": "60",
+     "location": {
+      "city": "Compton",
+      "country": "US",
+      "region": "CA"
+     },
+     "units": {
+      "distance": "mi",
+      "pressure": "in",
+      "speed": "mph",
+      "temperature": "F"
+     },
+     "wind": {
+      "chill": "71",
+      "direction": "310",
+      "speed": "12"
+     },
+     "atmosphere": {
+      "humidity": "66",
+      "pressure": "29.92",
+      "rising": "0",
+      "visibility": "10"
+     },
+     "astronomy": {
+      "sunrise": "5:42 am",
+      "sunset": "8:06 pm"
+     },
+     "image": {
+      "title": "Yahoo! Weather",
+      "width": "142",
+      "height": "18",
+      "link": "http://weather.yahoo.com",
+      "url": "http://l.yimg.com/a/i/brand/purplelogo//uh/us/news-wea.gif"
+     },
+     "item": {
+      "title": "Conditions for Compton, CA at 6:51 pm PDT",
+      "lat": "33.89",
+      "long": "-118.23",
+      "link": "http://us.rd.yahoo.com/dailynews/rss/weather/Compton__CA/*http://weather.yahoo.com/forecast/USCA0246_f.html",
+      "pubDate": "Fri, 26 Jun 2015 6:51 pm PDT",
+      "condition": {
+       "code": "34",
+       "date": "Fri, 26 Jun 2015 6:51 pm PDT",
+       "temp": "71",
+       "text": "Fair"
+      },
+      "description": "\n<img src=\"http://l.yimg.com/a/i/us/we/52/34.gif\"/><br />\n<b>Current Conditions:</b><br />\nFair, 71 F<BR />\n<BR /><b>Forecast:</b><BR />\nFri - Partly Cloudy. High: 77 Low: 62<br />\nSat - Mostly Cloudy. High: 77 Low: 65<br />\nSun - AM Clouds/PM Sun. High: 82 Low: 65<br />\nMon - AM Clouds/PM Sun. High: 83 Low: 66<br />\nTue - AM Clouds/PM Sun. High: 81 Low: 68<br />\n<br />\n<a href=\"http://us.rd.yahoo.com/dailynews/rss/weather/Compton__CA/*http://weather.yahoo.com/forecast/USCA0246_f.html\">Full Forecast at Yahoo! Weather</a><BR/><BR/>\n(provided by <a href=\"http://www.weather.com\" >The Weather Channel</a>)<br/>\n",
+      "forecast": [
+       {
+        "code": "29",
+        "date": "26 Jun 2015",
+        "day": "Fri",
+        "high": "77",
+        "low": "62",
+        "text": "Partly Cloudy"
+       },
+       {
+        "code": "28",
+        "date": "27 Jun 2015",
+        "day": "Sat",
+        "high": "77",
+        "low": "65",
+        "text": "Mostly Cloudy"
+       },
+       {
+        "code": "30",
+        "date": "28 Jun 2015",
+        "day": "Sun",
+        "high": "82",
+        "low": "65",
+        "text": "AM Clouds/PM Sun"
+       },
+       {
+        "code": "30",
+        "date": "29 Jun 2015",
+        "day": "Mon",
+        "high": "83",
+        "low": "66",
+        "text": "AM Clouds/PM Sun"
+       },
+       {
+        "code": "30",
+        "date": "30 Jun 2015",
+        "day": "Tue",
+        "high": "81",
+        "low": "68",
+        "text": "AM Clouds/PM Sun"
+       }
+      ],
+      "guid": {
+       "isPermaLink": "false",
+       "content": "USCA0246_2015_06_30_7_00_PDT"
+      }
+     }
+    },
+    {
+     "title": "Yahoo! Weather - Auburn, CA",
+     "link": "http://us.rd.yahoo.com/dailynews/rss/weather/Auburn__CA/*http://weather.yahoo.com/forecast/USCA0054_f.html",
+     "description": "Yahoo! Weather for Auburn, CA",
+     "language": "en-us",
+     "lastBuildDate": "Fri, 26 Jun 2015 7:15 pm PDT",
+     "ttl": "60",
+     "location": {
+      "city": "Auburn",
+      "country": "US",
+      "region": "CA"
+     },
+     "units": {
+      "distance": "mi",
+      "pressure": "in",
+      "speed": "mph",
+      "temperature": "F"
+     },
+     "wind": {
+      "chill": "97",
+      "direction": "260",
+      "speed": "7"
+     },
+     "atmosphere": {
+      "humidity": "23",
+      "pressure": "29.89",
+      "rising": "1",
+      "visibility": "10"
+     },
+     "astronomy": {
+      "sunrise": "5:40 am",
+      "sunset": "8:32 pm"
+     },
+     "image": {
+      "title": "Yahoo! Weather",
+      "width": "142",
+      "height": "18",
+      "link": "http://weather.yahoo.com",
+      "url": "http://l.yimg.com/a/i/brand/purplelogo//uh/us/news-wea.gif"
+     },
+     "item": {
+      "title": "Conditions for Auburn, CA at 7:15 pm PDT",
+      "lat": "38.89",
+      "long": "-121.08",
+      "link": "http://us.rd.yahoo.com/dailynews/rss/weather/Auburn__CA/*http://weather.yahoo.com/forecast/USCA0054_f.html",
+      "pubDate": "Fri, 26 Jun 2015 7:15 pm PDT",
+      "condition": {
+       "code": "34",
+       "date": "Fri, 26 Jun 2015 7:15 pm PDT",
+       "temp": "97",
+       "text": "Fair"
+      },
+      "description": "\n<img src=\"http://l.yimg.com/a/i/us/we/52/34.gif\"/><br />\n<b>Current Conditions:</b><br />\nFair, 97 F<BR />\n<BR /><b>Forecast:</b><BR />\nFri - Partly Cloudy. High: 100 Low: 67<br />\nSat - Mostly Sunny. High: 93 Low: 64<br />\nSun - Partly Cloudy. High: 91 Low: 65<br />\nMon - Sunny. High: 98 Low: 69<br />\nTue - Sunny. High: 102 Low: 74<br />\n<br />\n<a href=\"http://us.rd.yahoo.com/dailynews/rss/weather/Auburn__CA/*http://weather.yahoo.com/forecast/USCA0054_f.html\">Full Forecast at Yahoo! Weather</a><BR/><BR/>\n(provided by <a href=\"http://www.weather.com\" >The Weather Channel</a>)<br/>\n",
+      "forecast": [
+       {
+        "code": "29",
+        "date": "26 Jun 2015",
+        "day": "Fri",
+        "high": "100",
+        "low": "67",
+        "text": "Partly Cloudy"
+       },
+       {
+        "code": "34",
+        "date": "27 Jun 2015",
+        "day": "Sat",
+        "high": "93",
+        "low": "64",
+        "text": "Mostly Sunny"
+       },
+       {
+        "code": "30",
+        "date": "28 Jun 2015",
+        "day": "Sun",
+        "high": "91",
+        "low": "65",
+        "text": "Partly Cloudy"
+       },
+       {
+        "code": "32",
+        "date": "29 Jun 2015",
+        "day": "Mon",
+        "high": "98",
+        "low": "69",
+        "text": "Sunny"
+       },
+       {
+        "code": "32",
+        "date": "30 Jun 2015",
+        "day": "Tue",
+        "high": "102",
+        "low": "74",
+        "text": "Sunny"
+       }
+      ],
+      "guid": {
+       "isPermaLink": "false",
+       "content": "USCA0054_2015_06_30_7_00_PDT"
       }
      }
     }
-   }
+   ]
   }
  }
 }
