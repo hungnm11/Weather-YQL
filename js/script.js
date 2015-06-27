@@ -1,6 +1,10 @@
 $(function() {
-
-    $.getJSON("js/myjson.json", function(data) {
+	
+	//var url = "https://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20weather.forecast%20where%20location%20in%20(90210%2C%2094536%2C%2094085)&format=json&diagnostics=true&callback=";
+	
+	var url = "js/myjson.json"; //5 locations
+	
+    $.getJSON(url, function(data) {
         console.log(data);
         var speed = 500;
         var autoSwitch = true;
