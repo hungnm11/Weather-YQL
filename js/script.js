@@ -118,14 +118,12 @@ $(function() {
             
             $('.slide').fadeOut(speed);
             $('.active').fadeIn(speed);
-			$('.slide').animate({left: '-=' + widthSlide});
         }
 
         function slideNumber(elem) {
             //Count element
             var count_elem = $('#slider').children().length;
             var getOrinalElem = elem.text();
-
             for (var i = 1; i <= count_elem; i++) {
                 if (getOrinalElem == i) {
                     $('.active').removeClass('active');

@@ -60,7 +60,7 @@ body{
 }
 
 #next {
-	margin-left: -45px;
+	margin-left: -28px;
 }
 
 #countSlide {
@@ -78,7 +78,8 @@ body{
     font-family: sans-serif;
     font-size: 12px;
     text-decoration: none;
-    padding: 3px 5px;
+    padding: 1px 5px;
+	border-radius: 20px;
 }
 
 #countSlide .active{
