@@ -105,10 +105,6 @@ $(function() {
             $('.active').fadeIn(speed);
         }
         
-        var widthSlide = $('.slide').outerWidth()
-        var totalSlide = countObj * widthSlide;
-        
-        
         function nextSlide() {
             $('.active').removeClass('active').addClass('oldActive');
             if($('.oldActive').is(':last-child')) {
@@ -122,6 +118,7 @@ $(function() {
             
             $('.slide').fadeOut(speed);
             $('.active').fadeIn(speed);
+			$('.slide').animate({left: '-=' + widthSlide});
         }
 
         function slideNumber(elem) {

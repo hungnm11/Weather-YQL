@@ -31,6 +31,7 @@ body{
     padding: 20px;
     font-family: sans-serif;
     text-align: center;
+	float: left;
 }
 
 #slider-caption {
